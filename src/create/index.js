@@ -1,4 +1,7 @@
-var fs = require('fs');
+var fs = require('fs'),
+    boilerplate = {
+      js: fs.readFileSync(__dirname+'/boilerplate.js')
+    };
 
 module.exports = function(name) {
   var folder = process.cwd();
@@ -9,7 +12,7 @@ module.exports = function(name) {
 
   fs.mkdirSync(folder+'/'+name);
 
-  addFile('js');
+  addFile('js', boilerplate.js);
   addFile('less');
   addFile('jade');
   addFile('test.js');
