@@ -4,13 +4,10 @@ New Library
 Usage
 -----
 
-Installation `npm install`
+Installation `npm install -g subview-cli`
+
 
 Development
 -----------
 
-To Build: `grunt build`
-
-To Develop: `grunt watch`
-
-To Test: `npm test`
+`npm install -g`
