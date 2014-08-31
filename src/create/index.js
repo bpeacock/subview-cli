@@ -7,7 +7,7 @@ module.exports = function(name) {
   var folder = process.cwd();
 
   function addFile(extension, contents) {
-    fs.writeFileSync(folder+'/'+name+'/'+name+'.'+extension, contents || '');
+    fs.writeFileSync(folder+'/'+name+'/index.'+extension, contents || '');
   }
 
   fs.mkdirSync(folder+'/'+name);
